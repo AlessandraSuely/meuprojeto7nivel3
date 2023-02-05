@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-heading: 'Staatliches', sans-serif;
+  --ff-texting: 'Palanquin', sans-serif;
+
+  --hue: 250;
+  --bg-primary: hsl(var(--hue), 100%, 97%);
+  --bg-secundary:hsl(var(--hue), 17%, 62%);
+  --bg-tercery: hsl(var(--hue), 18%, 79%);
+  --fc-primary: hsl(var(--hue), 0%, 100%);
+  --fc-secundary:hsl(var(--hue), 84%, 12%,);
+  --fc-tercery: hsl(var(--hue), 17%, 35%);
+}
+
+header img {
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+
+  width: 13.7rem;
+  height: 12.7rem;
+}
+
+h1 {
+  background-color: var(--bg-tercery);
+}
+
+
+header {
+  font-family: var(--ff-heading);
+  background-color: var(--bg-secundary);
+  color: var(--fc-primary);
+
+  text-align: center;
+
+  width: 38.4rem;
+  height: 27.9rem;
+
+  margin-bottom: 1.4rem;
+}
+
+body {
+  background-color: var(--bg-primary);
+  width: 38.4rem;
+  text-align: center;
+}
+
+.page {
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+.card, .card2 {
+  width: 100%;
+  margin: 3.2rem auto;
+
+  transition: all 200ms;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.card2:hover {
+  transform: scaleY(1.1);
+  opacity: 0.7;
+}
+
+
+p {
+font-family: var(--ff-texting);
+color: var(--fc-secundary);
+text-transform: uppercase;
+
+margin-bottom: 6.3rem;
+}
+  
+ h2 {
+font-family: var(--ff-heading);
+color: var(--fc-tercery);
+ } 
+
+ .card , .card2 {
+  position: relative;
+ }
+
+.card img {
+height: 25.0rem;
+object-fit: cover;
+
+}
+
+.card2 img {
+  height: 45.0rem;
+  object-fit: cover;
+  }
+
+.card h2 {
+  position: absolute;
+  top: 1.7rem;
+  right: 3.9rem;
+
+  border-radius: 2rem;
+  background: #FEEAFA;
+  font-size: 2.0rem;
+  font-weight: 400;
+  padding: 0 1.6rem;
+  height: 3.8rem;
+
+  display: inline-flex;
+  align-items: center;
+}
+
+.card2 h2 {
+  position: absolute;
+  top: 1.7rem;
+  right: 3.9rem;
+
+  border-radius: 2rem;
+  background: #FEEAFA;
+  font-size: 2.0rem;
+  font-weight: 400;
+  padding: 0 1.6rem;
+  height: 3.8rem;
+
+  display: inline-flex;
+  align-items: center;
+}
+
+h2 {
+  animation-name: topdown;
+  animation-duration: 700ms;
+}
+
+@keyframes topdown {
+  0% {
+     opacity: 0;
+     transform: translateY(-15px);
+  }
+
+  100% {
+       opacity: 1;
+       transform: translateY(0);
+  }
+}
